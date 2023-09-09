@@ -30,10 +30,10 @@ for quizNum in range(35):
         answerOptions = wrongAnswers + [correctAnswer]
         random.shuffle(answerOptions)
         
-        quizFile.write(f'{questionNum + 1}. What is the capital of {states[questionNum]}?\n\n')
+        quizFile.write(f'{questionNum + 1}. What is the capital of {states[questionNum]}?\n\n\n')
 
         for i in range(4):
-            quizFile.write(f"{'ABCD'[i]}. { answerOptions[i]}\n")
+            quizFile.write(f"{'ABCD'[i]}. { answerOptions[i]}\n\n")
             quizFile.write('\n')
         
         
